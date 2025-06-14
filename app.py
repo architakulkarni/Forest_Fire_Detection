@@ -12,10 +12,10 @@ st.write("Upload a satellite image to detect whether there is **Fire** or **No F
 # Load model (cached)
 @st.cache_resource
 def load_fire_model():
-    model = load_model(r"C:/Users/archi/OneDrive/Desktop/edunet/fire_detection_model.h5")
+    model = load_model(r"fire_detection_model.h5")
     return model
 
-model = load_fire_model(r"C:\Users\archi\OneDrive\Desktop\edunet\fire_detection_model.h5")
+model = load_fire_model()
 
 # Class labels (update if needed)
 class_names = ["No Fire", "Fire 🔥"]
